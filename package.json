@@ -1,0 +1,20 @@
+{
+  "name": "email-verify-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "json": "^11.0.0",
+    "mongoose": "^6.1.8",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15"
+  },
+  "description": ""
+}
