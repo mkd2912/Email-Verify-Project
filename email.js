@@ -12,7 +12,7 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'mkdindia29@gmail.com',
-  to: 'asuwill65@gmail.com',
+  to: 'krishnaku2507@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'Your one time password!',
   html:'<h1>This is your otp:</h1>'+otp+'<h3>Thankyou</h3>',
