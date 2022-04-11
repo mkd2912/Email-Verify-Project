@@ -14,7 +14,7 @@ mongoose.connect('mongodb://localhost:27017/userdb')
 
 
 
-app.use('/api/user',auth);
+app.use('/',auth);
 
 
 

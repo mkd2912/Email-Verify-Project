@@ -1,18 +1,19 @@
 const nodemailer = require('nodemailer');
 const User = require('./model/model');
+require('dotenv').config()
 const otp=Math.floor(Math.random() * 999999) + 100000;
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'c48015492@gmail.com',
-    pass: 'ABcd1234@'
+    user: process.env.USER_MAIL,
+    pass: process.env.UPASSWORD
   }
 });
 
 var mailOptions = {
-  from: 'mkdindia29@gmail.com',
-  to: 'krishnaku2507@gmail.com',
+  from: process.env.USER_MAIL,
+  to: process.env.RMAIL,
   subject: 'Sending Email using Node.js',
   text: 'Your one time password!',
   html:'<h1>This is your otp:</h1>'+otp+'<h3>Thankyou</h3>',
